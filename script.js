@@ -12,7 +12,8 @@ function changeBG() {
 
     if (
       document.body.style.backgroundColor === "black" ||
-      document.body.style.backgroundColor === "#000"
+      document.body.style.backgroundColor === "#000" ||
+      document.body.style.backgroundColor === "rgb(0, 0, 0)"
     ) {
       h1.style.color = "#fff";
       btn.style.backgroundColor = "#fff";
