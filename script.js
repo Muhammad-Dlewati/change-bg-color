@@ -4,7 +4,11 @@ let h1 = document.querySelector("h1");
 
 window.addEventListener("DOMContentLoaded", () => {
   document.body.style.backgroundColor = getRandomColor();
-  input.value = document.body.style.backgroundColor;
+  input.placeholder = document.body.style.backgroundColor;
+});
+
+input.addEventListener("focus", () => {
+  input.placeholder = "Write a Color to Change";
 });
 
 btn.addEventListener("click", changeBG);
@@ -30,7 +34,7 @@ function changeBG() {
     }
   } else {
     document.body.style.backgroundColor = getRandomColor();
-    input.value = document.body.style.backgroundColor;
+    input.placeholder = document.body.style.backgroundColor;
   }
 }
 
