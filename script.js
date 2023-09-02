@@ -35,6 +35,19 @@ function changeBG() {
   } else {
     document.body.style.backgroundColor = getRandomColor();
     input.placeholder = document.body.style.backgroundColor;
+    if (
+      document.body.style.backgroundColor === "black" ||
+      document.body.style.backgroundColor === "#000" ||
+      document.body.style.backgroundColor === "rgb(0, 0, 0)"
+    ) {
+      h1.style.color = "#fff";
+      btn.style.backgroundColor = "#fff";
+      btn.style.color = "#000";
+    } else {
+      h1.style.color = "#000";
+      btn.style.backgroundColor = "#000";
+      btn.style.color = "#fff";
+    }
   }
 }
 
